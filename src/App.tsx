@@ -1,13 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import TodoList from "./components/TodoList";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-     hello world
+    <div>
+      <TodoList />
     </div>
   );
-}
+};
 
 export default App;

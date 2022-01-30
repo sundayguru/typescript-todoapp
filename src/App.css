@@ -1,0 +1,99 @@
+body {
+  background-color: rgb(55, 57, 173);
+  padding-top: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input_container {
+  width: 95%;
+  position: relative;
+}
+
+.input {
+  width: 99%;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+  padding: 10px 0;
+  padding-left: 10px;
+  font-size: 24px;
+}
+
+.input_button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(3, 165, 11);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.input_button:hover {
+  background-color: rgb(89, 211, 95);
+  transform: scale(1.1);
+}
+
+.todos__container {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.todos {
+  width: 45%;
+  padding: 10px;
+  padding-top: 40px;
+  border: dotted #eee 1px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.todos__header {
+  text-align: center;
+  background-color: rgb(214, 212, 212);
+  padding: 10px;
+  position: absolute;
+  top: -45px;
+  left: 15%;
+  width: 60%;
+}
+
+.todos__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(211, 207, 207);
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px rgb(44, 44, 44);
+}
+
+.todos__item__actions {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 5px;
+}
+
+.icon_button {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.icon_button:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
