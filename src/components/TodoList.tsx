@@ -1,14 +1,14 @@
-import React, { useReducer } from "react";
-import TodoReducer from "../reducer";
-import { Todo } from "../types/models";
-import InputField from "./InputField";
-import TodoItem from "./TodoItem";
+import React, { useReducer } from "react"
+import TodoReducer from "../reducer"
+import { Todo } from "../types/models"
+import InputField from "./InputField"
+import TodoItem from "./TodoItem"
 
-type Props = {};
+type Props = {}
 
 const TodoList: React.FC<Props> = () => {
-  const [todos, dispatch] = useReducer(TodoReducer, []);
-  console.log("todos", todos);
+  const [todos, dispatch] = useReducer(TodoReducer, [])
+  console.log("todos", todos)
   return (
     <div className="container">
       <InputField dispatch={dispatch} />
@@ -31,7 +31,7 @@ const TodoList: React.FC<Props> = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TodoList;
+export default TodoList
